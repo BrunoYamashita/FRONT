@@ -1,9 +1,15 @@
 <div class="place-info-box">
-<div class="place-info-box-content" [routerLink]="['/book',book._id]">
-    <span class="place-info-box-text">{{book.title}}</span>
-    <span class="place-info-box-star"><i class="fa fa-star"></i> {{book.rating}}</span>
-    <span class="place-info-box-detail">Author: {{book.user}}</span>
-    <span class="place-info-box-detail">Price: {{book.price}}</span>
-    <span class="place-info-box-detail">Year Published: {{book.yearPublished}}</span>
+  <div class="place-info-box-content" [routerLink]="['/book',book._id]">
+   <div class="img-content">
+     <img class="img-prod" src="https://picsum.photos/355/355">
+     <img class="cart" src="../../../assets/pen-on-square-of-paper-interface-symbol.png">
+   </div>
+   <div class="flex-content">
+     <p class="content-info bold">{{book.title | uppercase }}</p>
+     <span class="content-info bold"><i class="fa fa-star"></i> {{book.rating}}</span>
+   </div> 
+    <p class="content-info"><span class="bold">Author:</span> {{book.author}}</p>
+    <p class="content-info"><span class="bold">Price:</span> {{book.price }}</p>
+    <p class="content-info"><span class="bold">Year Published:</span> {{book.yearPublished }}</p>
   </div>
 </div>

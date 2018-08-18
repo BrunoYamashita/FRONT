@@ -1,7 +1,7 @@
 export class Book {
   _id: string;
   title: string;
-  user: string;
+  author: string;
   yearPublished: string;
   price: string;
   rating: string;

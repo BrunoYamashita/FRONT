@@ -8,8 +8,7 @@ import { BookViewComponent } from './book/book-view/book-view.component';
 const routes: Routes = [
   { path: 'book/:id', component: BookViewComponent },
   { path: 'book', component: BookComponent },
-  { path: 'home', component: HomeComponent },
-  { path: '', component: HomeComponent },
+  { path: '', component: BookComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

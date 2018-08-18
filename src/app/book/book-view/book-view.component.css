@@ -5,3 +5,13 @@
 .ng-invalid:not(form)  {
   border-left: 5px solid #a94442; /* red */
 }
+
+.title{
+  text-align: center;
+}
+
+.right{
+  float: right;
+  margin-left: 5px;
+  border: 1px solid
+}

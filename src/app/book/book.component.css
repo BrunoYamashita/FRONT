@@ -10,3 +10,39 @@
   display: flex;
   justify-content: space-between;
 }
+
+.content-book{
+  width: calc(100%/3);
+  padding-right: 5px;
+}
+
+@media(max-width:991px){
+  .content-book{
+    width: calc(100%/2);
+    padding-right: 5px;
+  }
+}
+
+@media(max-width:767px){
+  .content-book{
+    width: 100%;
+    padding-right: 5px;
+  }
+}
+
+.btn-add{
+  background-color: transparent;
+  border: 2px solid #343a40;
+  padding: 3px 10px;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 5px;
+  color: #343a40;
+}
+
+.btn-add:hover{
+  background-color: #343a40;
+  color: #fff;
+  cursor: pointer;
+}
+

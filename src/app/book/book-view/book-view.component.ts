@@ -22,9 +22,8 @@ export class BookViewComponent implements OnInit {
 
   ngOnInit() {
     this.bookForm = this.formBuilder.group({
-      _id: [''],
       title: ['', Validators.required],
-      user: ['', Validators.required],
+      author: ['', Validators.required],
       yearPublished: ['', Validators.required],
       price: ['', Validators.required],
       rating: ['', Validators.required],
@@ -41,7 +40,7 @@ export class BookViewComponent implements OnInit {
 
   onSubmit() {
     this.id
-    ? this.bookService.updateBook(this.bookForm.value, this.book._id).subscribe(res => {
+    ? this.bookService.updateBook(this.bookForm.value, this.id).subscribe(res => {
       this.router.navigateByUrl('/book');
     })
     : this.bookService.addBook(this.bookForm.value).subscribe(res => {
