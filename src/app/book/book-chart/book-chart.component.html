@@ -1,0 +1,9 @@
+<div class="place-info-box">
+<div class="place-info-box-content" [routerLink]="['/book',book._id]">
+    <span class="place-info-box-text">{{book.title}}</span>
+    <span class="place-info-box-star"><i class="fa fa-star"></i> {{book.rating}}</span>
+    <span class="place-info-box-detail">Author: {{book.user}}</span>
+    <span class="place-info-box-detail">Price: {{book.price}}</span>
+    <span class="place-info-box-detail">Year Published: {{book.yearPublished}}</span>
+  </div>
+</div>

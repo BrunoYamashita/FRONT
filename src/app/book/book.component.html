@@ -1,0 +1,15 @@
+<section class="content-header">
+  <div class="head">
+      <h1>Book</h1>
+      <button class="btn btn-success" [routerLink]="['/book','']">Add</button>
+  </div>
+
+</section>
+
+<section class="content">
+  <div class="row">
+    <div *ngFor="let book of books" class="col-sm-6 col-xs-12">
+      <st-book-chart [book]="book"></st-book-chart>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+.content{
+  padding-bottom: 50px;
+}
+
+.content-header{
+  padding-bottom: 20px;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+}
