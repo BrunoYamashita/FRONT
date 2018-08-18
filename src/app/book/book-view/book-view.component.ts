@@ -24,9 +24,9 @@ export class BookViewComponent implements OnInit {
     this.bookForm = this.formBuilder.group({
       title: ['', Validators.required],
       author: ['', Validators.required],
-      yearPublished: ['', Validators.required],
+      yearPublished: ['', [Validators.required, Validators.min(1500), Validators.max(2018)]],
       price: ['', Validators.required],
-      rating: ['', Validators.required],
+      rating: ['', [Validators.required, Validators.min(0), Validators.max(5)]],
     });
     this.route.params.subscribe((params) => {
       this.id = params['id'] || null;

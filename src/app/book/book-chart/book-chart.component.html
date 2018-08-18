@@ -9,7 +9,7 @@
      <span class="content-info bold"><i class="fa fa-star"></i> {{book.rating}}</span>
    </div> 
     <p class="content-info"><span class="bold">Author:</span> {{book.author}}</p>
-    <p class="content-info"><span class="bold">Price:</span> {{book.price }}</p>
+    <p class="content-info"><span class="bold">Price:</span> {{book.price | currency: 'BRL'}}</p>
     <p class="content-info"><span class="bold">Year Published:</span> {{book.yearPublished }}</p>
   </div>
 </div>
