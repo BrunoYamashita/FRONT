@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
+## Useful Info
+
+Using ng generate on folder root create in src/app, you can navigate to your folder, e.g.: cd src/app/store, to create components and modules on other folders.
+
+You can use @Injectable({providedIn: 'root'}) to provide a service everywhere in your app.
+
+## Deploy
+
+TODO
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
